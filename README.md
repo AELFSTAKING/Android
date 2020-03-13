@@ -2,7 +2,11 @@
 
 
 
-## 参数配置
+## 简单功能介绍
+
+一款去中心化跨链数字货币交易App，支持限价/市价交易，查看实时行情、K线指标等功能，在进行交易操作前需要先在App本地创建或导入账户。
+
+## 代码参数配置
 
 正式使用需要在base/build.gradle中配置三个Url参数
 
@@ -29,11 +33,7 @@ buildConfigField "String", "mqttUrl", "\"\""
 
 3.将生成app安装文件Apk文件（./app/build/outputs/apk/debug/StakingPlanet_1.0.2_debug_yyyymmddhhmm.apk）
 
-## 介绍
-
-一款去中心化跨链数字货币交易App，在进行交易操作前需要先在App本地创建或导入账户。
-
-本App支持限价/市价交易，查看实时行情，查看K线指标等功能。
+## 如何创建或导入账户
 
   `如果你有ETH账户，请查看'二、导入充值账户'` 
 
