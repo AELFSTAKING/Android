@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+    />
+    <LinearLayout
+        android:id="@+id/ll_2"
+        style="@style/MatchWrap.Vertical"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/iv_icon"
+    >
+        <TextView
+            android:id="@+id/tv_currency"
+            style="@style/WrapWrap.TextPrimary.16sp"
+            tools:text="S-BTC"/>
+        <TextView
+            android:id="@+id/tv_chain"
+            style="@style/WrapWrap.TextSecondary.13sp"
+            android:layout_marginTop="6dp"
+            tools:text="(ETH)"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_next"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/ic_next_gray"
+    />
+    <TextView
+        android:id="@+id/tv_amount"
+        style="@style/WrapWrap.TextPrimary.16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/iv_next"
+        android:text="- -"
+    />
+    <TextView
+        android:id="@+id/tv_usdt_amount"
+        style="@style/WrapWrap.TextSecondary.12sp"
+        android:layout_below="@+id/tv_amount"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/iv_next"
+        android:text="- -"
+    />
+    <View
+        style="@style/HorizontalLine.ColorFFECEDF4"
+        android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

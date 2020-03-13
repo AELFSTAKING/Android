@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchWrap"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="15dp"
+    android:background="@mipmap/rec"
+    android:paddingBottom="21dp"
+>
+    <TextView
+        android:id="@+id/tv_currency"
+        style="@style/WrapWrap.TextPrimary.12sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/rec_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        tools:text="S-ETH"
+    />
+    <TextView
+        android:id="@+id/tv_total"
+        style="@style/WrapWrap.TextPrimary.12sp"
+        android:layout_below="@+id/tv_currency"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        tools:text="567,99 S-ETH"
+    />
+    <TextView
+        style="@style/WrapWrap.TextSecondary.12sp"
+        android:layout_alignBottom="@+id/tv_total"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_total"
+        android:paddingLeft="10dp"
+        android:text="累计充币"
+    />
+    <TextView
+        android:id="@+id/tv_balance"
+        style="@style/WrapWrap.TextPrimary.12sp"
+        android:layout_below="@+id/tv_total"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        tools:text="567,99 S-ETH"
+    />
+    <TextView
+        style="@style/WrapWrap.TextSecondary.12sp"
+        android:layout_alignBottom="@+id/tv_balance"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_balance"
+        android:paddingLeft="10dp"
+        android:text="余额"
+    />
+    <TextView
+        android:id="@+id/tv_reward"
+        style="@style/WrapWrap.TextPrimary.12sp"
+        android:layout_below="@+id/tv_balance"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:paddingRight="10dp"
+        tools:text="567,99 S-ETH"
+    />
+    <TextView
+        style="@style/WrapWrap.TextSecondary.12sp"
+        android:layout_alignBottom="@+id/tv_reward"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_reward"
+        android:paddingLeft="10dp"
+        android:text="已发奖励"
+    />
+    <TextView
+        android:id="@+id/tv_unsend_reward"
+        style="@style/WrapWrap.TextPrimary.12sp"
+        android:layout_below="@+id/tv_reward"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:paddingRight="10dp"
+        tools:text="567,99 S-ETH"
+    />
+    <TextView
+        style="@style/WrapWrap.TextSecondary.12sp"
+        android:layout_alignBottom="@+id/tv_unsend_reward"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_unsend_reward"
+        android:paddingLeft="10dp"
+        android:text="待领奖励"
+
+    />
+</RelativeLayout>
+

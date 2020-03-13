@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_starus"
+    style="@style/MatchMatch.Vertical.Center"
+    android:paddingBottom="150dp"
+>
+    <ImageView
+        android:id="@+id/iv_pic"
+        style="@style/WrapWrap"
+        android:src="@mipmap/ic_empty"
+    />
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/WrapWrap.TextSecondary.12sp"
+        android:layout_marginTop="12dp"
+        tools:text="暂无交易明细"
+    />
+</LinearLayout>

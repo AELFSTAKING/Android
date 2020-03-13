@@ -1,0 +1,335 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+    <style name="AppTheme.SplashTheme">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <!--
+        <item name="android:windowIsTranslucent">true</item>
+        -->
+    </style>
+
+    <!-- toolbar菜单文字尺寸 -->
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--Toolbar弹出层样式 -->
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层字体颜色 -->
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:colorBackground">@color/textSecondary</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">-10dp</item>
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/color_white</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+        <!--<item name="android:listDivider">@drawable/bg_divider</item>-->
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+        <!-- 加入toolbar溢出【弹出】菜单的风格 -->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="ActionSheetStyleiOS7">
+        <item name="actionSheetBackground">@android:color/transparent</item>
+        <item name="cancelButtonBackground">@drawable/bg_white_radius_9</item>
+        <item name="otherButtonTopBackground">@drawable/bg_grey2_top_radius_9</item>
+        <item name="otherButtonMiddleBackground">@drawable/bg_white</item>
+        <item name="otherButtonBottomBackground">@drawable/bg_white_bottom_radius_9</item>
+        <item name="cancelButtonTextColor">#FF999999</item>
+        <item name="otherButtonTextColor">#FF333333</item>
+        <item name="actionSheetPadding">8dp</item>
+        <item name="otherButtonSpacing">0dp</item>
+        <item name="cancelButtonMarginTop">10dp</item>
+        <item name="actionSheetTextSize">18sp</item>
+    </style>
+
+    <!--交易是否显示两边的textview -->
+    <declare-styleable name="IsShowTv">
+        <attr name="isShow" format="boolean"></attr>
+    </declare-styleable>
+
+    <style name="MainTabLayout" parent="WrapWrap.Vertical.Center">
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="MainTabText" parent="WrapWrap">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textColor">@color/main_tab_text_color</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="CustomRadioBuy">
+        <item name="android:background">@drawable/bg_radio_buy</item>
+        <item name="android:textColor">@color/buy_sell_text_color</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="CustomRadioSell">
+        <item name="android:background">@drawable/bg_radio_sell</item>
+        <item name="android:textColor">@color/buy_sell_text_color</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="CustomRadioKLineItem">
+        <item name="android:textColor">@color/kline_item_text_color</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <declare-styleable name="TradeEditText">
+        <attr name="isMoney" format="boolean"/>
+        <attr name="setHintText" format="string"/>
+        <attr name="isShowAddSub" format="boolean"/>
+    </declare-styleable>
+
+    //交易控件的边距
+    <declare-styleable name="TradeViewPadding">
+        <attr name="totalPadding" format="dimension"/>
+        <attr name="backGroundPadding" format="dimension"/>
+    </declare-styleable>
+
+    <style name="HorizontalLine.ColorFFECEDF4">
+        <item name="android:background">@color/color_FFECEDF4</item>
+    </style>
+    <style name="HorizontalLine.ColorFFF5F6FA">
+        <item name="android:background">@color/color_FFF5F6FA</item>
+    </style>
+    <style name="VerticalLine.ColorFFECEDF4">
+        <item name="android:background">@color/color_FFECEDF4</item>
+    </style>
+
+    <style name="WrapWrap.TextPrimary">
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.10sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.13sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.14sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.15sp">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.17sp">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.21sp">
+        <item name="android:textSize">21sp</item>
+    </style>
+    <style name="WrapWrap.TextPrimary.30sp">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="WrapWrap.TextSecondary">
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+    <style name="WrapWrap.TextSecondary.8sp">
+        <item name="android:textSize">8sp</item>
+    </style>
+    <style name="WrapWrap.TextSecondary.10sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="WrapWrap.TextSecondary.11sp">
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="WrapWrap.TextSecondary.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="WrapWrap.TextSecondary.13sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="WrapWrap.TextSecondary.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="WrapWrap.TextSecondary.15sp">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="WrapWrap.TextSecondary.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="WrapWrap.TextSecondary.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="WrapWrap.TextThird">
+        <item name="android:textColor">@color/textThird</item>
+    </style>
+    <style name="WrapWrap.TextThird.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="WrapWrap.ColorWhite">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+    <style name="WrapWrap.ColorWhite.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="WrapWrap.ColorWhite.13sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="WrapWrap.ColorWhite.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="WrapWrap.ColorWhite.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="WrapWrap.ColorWhite.30sp">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="WrapWrap.ColorFF641DAF">
+        <item name="android:textColor">@color/color_FF641DAF</item>
+    </style>
+    <style name="WrapWrap.ColorFF641DAF.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="WrapWrap.ColorFF641DAF.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="WrapWrap.Color80FFFFFF">
+        <item name="android:textColor">@color/color_80FFFFFF</item>
+    </style>
+    <style name="WrapWrap.Color80FFFFFF.11sp">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="WrapWrap.ColorFFE8353C">
+        <item name="android:textColor">@color/color_FFE8353C</item>
+    </style>
+    <style name="WrapWrap.ColorFFE8353C.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="WrapWrap.ColorFF000000">
+        <item name="android:textColor">@color/color_FF000000</item>
+    </style>
+    <style name="WrapWrap.ColorFF000000.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="WrapWrap.ColorFFF68B09">
+        <item name="android:textColor">@color/color_FFF68B09</item>
+    </style>
+    <style name="WrapWrap.ColorFFF68B09.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="WrapWrap.ColorFFF79B2C">
+        <item name="android:textColor">@color/color_FFF79B2C</item>
+    </style>
+    <style name="WrapWrap.ColorFFF79B2C.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="WrapWrap.ColorFF007AFF">
+        <item name="android:textColor">@color/color_FF007AFF</item>
+    </style>
+    <style name="WrapWrap.ColorFF007AFF.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="WrapWrap.ColorFF41BDA7">
+        <item name="android:textColor">@color/color_FF41BDA7</item>
+    </style>
+    <style name="WrapWrap.ColorFF41BDA7.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="WrapWrap.ColorFFA585CE">
+        <item name="android:textColor">@color/color_FFA585CE</item>
+    </style>
+    <style name="WrapWrap.ColorFFA585CE.10sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="WrapWrap.ColorFFDF677E">
+        <item name="android:textColor">@color/color_FFDF677E</item>
+    </style>
+    <style name="WrapWrap.ColorFFDF677E.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="WrapWrap.ColorFFDF677E.13sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+    <style name="EditText">
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+    </style>
+
+    <style name="EditText.13sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+    <style name="WrapWrap.Color8C9BB4">
+        <item name="android:textColor">#FF8C9BB4</item>
+    </style>
+    <style name="WrapWrap.Color8C9BB4.10sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="WrapWrap.ColorDF677E">
+        <item name="android:textColor">#FFDF677E</item>
+    </style>
+    <style name="WrapWrap.ColorDF677E.10sp">
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="WrapWrap.ColorDF677E.11sp">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!-- Klie 竖屏-->
+    <style name="MainCommonText" parent="SingleText">
+        <item name="android:textColor">@color/textHint</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="SingleText">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+</resources>

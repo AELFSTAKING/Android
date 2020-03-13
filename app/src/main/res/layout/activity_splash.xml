@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/header"
+        style="@style/MatchMatch">
+        <ImageView
+            android:id="@+id/iv_bg"
+            style="@style/MatchMatch"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_splash_bg"/>
+        <View
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </FrameLayout>
+</RelativeLayout>

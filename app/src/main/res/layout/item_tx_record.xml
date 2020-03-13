@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/ll_1"
+        style="@style/WrapWrap.Vertical"
+        android:layout_centerVertical="true"
+    >
+        <LinearLayout
+            style="@style/WrapWrap.Horizontal"
+            android:gravity="center_vertical"
+        >
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/WrapWrap.TextPrimary.13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                tools:text="充值"/>
+            <TextView
+                android:id="@+id/tv_hash"
+                style="@style/WrapWrap.TextPrimary.13sp"
+                android:layout_width="120dp"
+                android:layout_marginLeft="7dp"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                tools:text="1W214f2wgsghagq5gsghagq5gsghagq5gsghagq5gsghagq5"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/WrapWrap.TextSecondary.11sp"
+            android:layout_marginTop="8dp"
+            tools:text="2019.03.04 11:32"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_2"
+        style="@style/MatchWrap.Vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ll_1"
+    >
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/WrapWrap.TextPrimary.16sp"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            tools:text="+1.3200 BTC"
+        />
+        <TextView
+            android:id="@+id/tv_buy_sell"
+            style="@style/WrapWrap.TextSecondary.10sp"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            tools:text="成功"
+        />
+    </LinearLayout>
+    <View
+        style="@style/HorizontalLine.ColorFFECEDF4"
+        android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

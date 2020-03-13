@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/color_white">
+    <include
+        layout="@layout/toolbar_activity_layout"
+    />
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none"
+    >
+        <LinearLayout
+            style="@style/MatchMatch.Vertical"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+        >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                style="@style/MatchWrap"
+                android:layout_marginTop="20dp"
+            />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="loading">loading</string>
+    <string name="temporarily_no_data">Temporarily no data</string>
+    <string name="price">Price</string>
+    <string name="change_rate">chagne rate</string>
+    <string name="volume">trading volume</string>
+    <string name="open_price">open price</string>
+    <string name="close_price">close price</string>
+    <string name="high_price">highest price</string>
+    <string name="low_price">lowest price</string>
+    <string name="k_vol">VOL: %s</string>
+    <string name="k_macd">MACD(12,26,9): %s</string>
+    <string name="k_ma5">MA[5]: %s</string>
+    <string name="k_ma10">MA[10]: %s</string>
+    <string name="k_ma20">MA[20]: %s</string>
+    <string name="k_ema7">EMA[7]: %s</string>
+    <string name="k_ema30">EMA[30]: %s</string>
+    <string name="k_ups">UP: %s</string>
+    <string name="k_mbs">MB: %s</string>
+    <string name="k_dns">DN: %s</string>
+    <string name="k_dif">DIF: %s</string>
+    <string name="k_dea">DEA: %s</string>
+    <string name="k_k">KDJ(9,3,3) K: %s</string>
+    <string name="k_d">D: %s</string>
+    <string name="k_j">J: %s</string>
+    <string name="k_rsi6">RSI6: %s</string>
+    <string name="k_rsi12">RSI12: %s</string>
+    <string name="k_rsi24">RSI24: %s</string>
+</resources>

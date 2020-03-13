@@ -1,0 +1,29 @@
+<resources>
+    <string name="loading">加载中</string>
+    <string name="temporarily_no_data">Temporarily no data</string>
+    <string name="price">价格</string>
+    <string name="change_rate">涨跌幅</string>
+    <string name="volume">成交量</string>
+    <string name="open_price">开盘价</string>
+    <string name="close_price">收盘价</string>
+    <string name="high_price">最高价</string>
+    <string name="low_price">最低价</string>
+    <string name="k_vol">VOL: %s</string>
+    <string name="k_macd">MACD(12,26,9): %s</string>
+    <string name="k_ma5">MA[5]: %s</string>
+    <string name="k_ma10">MA[10]: %s</string>
+    <string name="k_ma20">MA[20]: %s</string>
+    <string name="k_ema7">EMA[7]: %s</string>
+    <string name="k_ema30">EMA[30]: %s</string>
+    <string name="k_ups">UP: %s</string>
+    <string name="k_mbs">MB: %s</string>
+    <string name="k_dns">DN: %s</string>
+    <string name="k_dif">DIF: %s</string>
+    <string name="k_dea">DEA: %s</string>
+    <string name="k_k">KDJ(9,3,3) K: %s</string>
+    <string name="k_d">D: %s</string>
+    <string name="k_j">J: %s</string>
+    <string name="k_rsi6">RSI6: %s</string>
+    <string name="k_rsi12">RSI12: %s</string>
+    <string name="k_rsi24">RSI24: %s</string>
+</resources>

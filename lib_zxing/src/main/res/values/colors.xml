@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#22000000</color>
+    <color name="viewfinder_mask">#3c000000</color>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchWrap"
+    android:paddingTop="9dp"
+    android:paddingBottom="9dp"
+>
+    <TextView
+        android:id="@+id/tv_currency"
+        style="@style/WrapWrap.TextPrimary.13sp"
+        android:layout_alignParentLeft="true"
+        tools:text="6 PLANET"
+    />
+    <TextView
+        android:id="@+id/tv_amount"
+        style="@style/WrapWrap.TextPrimary.13sp"
+        android:layout_alignParentRight="true"
+        tools:text="6 PLANET"
+    />
+</RelativeLayout>
+

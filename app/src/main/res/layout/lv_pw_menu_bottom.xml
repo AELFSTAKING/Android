@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    style="@style/MatchMatch"
+>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/MatchWrap"
+        android:background="@drawable/trade_popuwindow_shape">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/MatchMatch"
+            android:layout_gravity="center"
+        />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sanjiao_view"
+        android:layout_width="10dp"
+        android:layout_height="7dp"
+        android:layout_below="@+id/ll_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/sanjiao_popuwindow_bottom"/>
+
+
+</RelativeLayout>

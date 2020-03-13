@@ -1,0 +1,1 @@
+include ':app', ':base', ':lib_update-app', ':lib_mqtt', ':lib_wallet', ':lib_mpchart', ':lib_custom_kline', ':lib_zxing', ':lib_ucrop'

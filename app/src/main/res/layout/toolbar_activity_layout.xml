@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="24dp"
+>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/MatchMatch"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="@mipmap/ic_back"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/Toolbar">
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/WrapWrap.TextPrimary.16sp"
+            android:layout_gravity="left|center_vertical"
+            android:text="关闭"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/WrapWrap.TextPrimary.18sp"
+            android:layout_gravity="center"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            tools:text="S-BTC"
+        />
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/WrapWrap.ColorFF641DAF.12sp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            tools:text="添加新地址"
+        />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            style="@style/WrapWrap"
+            android:layout_gravity="right|center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="15dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        style="@style/HorizontalLine.ColorFFECEDF4"
+        android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

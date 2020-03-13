@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/color_white">
+    <include
+        layout="@layout/toolbar_activity_layout"
+    />
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none"
+    >
+        <LinearLayout
+            style="@style/MatchMatch.Vertical.Center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+        >
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_marginTop="128dp"
+                android:src="@mipmap/ic_success_large"
+            />
+
+            <TextView
+                style="@style/WrapWrap.TextPrimary.18sp"
+                android:layout_marginTop="33dp"
+                android:text="绑定成功"
+            />
+
+            <TextView
+                android:id="@+id/tv_submit"
+                style="@style/WrapWrap.ColorWhite.16sp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="112dp"
+                android:background="@drawable/bg_button"
+                android:gravity="center"
+                android:text="去充值"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_history"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/search_tag_select"
+    android:paddingLeft="4dp"
+    android:paddingTop="6dp"
+    android:paddingRight="4dp"
+    android:paddingBottom="6dp"
+    android:textColor="@color/textPrimary"
+    android:textSize="@dimen/sp_14"
+/>

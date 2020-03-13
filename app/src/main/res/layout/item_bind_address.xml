@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
+    <TextView
+        android:id="@+id/tv_note_name"
+        style="@style/WrapWrap.TextSecondary.13sp"
+        android:layout_width="72dp"
+        android:layout_centerVertical="true"
+        android:text="张三"
+    />
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/WrapWrap.TextSecondary.13sp"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_note_name"
+        android:width="72dp"
+        android:text="1W21fssq2wtf4vgsghagq5"
+    />
+    <View
+        style="@style/HorizontalLine.ColorFFECEDF4"
+        android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

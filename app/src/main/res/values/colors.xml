@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#FF641DAF</color>
+    <color name="colorPrimary">@color/colorAccent</color>
+    <color name="colorPrimaryDark">@color/colorAccent</color>
+
+    <color name="color_ECECEC">#FFECECEC</color>
+
+    <color name="textHint">#72757F</color>
+
+
+    <color name="decreasingBackground">#26DF677E</color>
+    <color name="increasingBackground">#2641BDA7</color>
+
+    <color name="color_FF291F59">#FF291F59</color>
+    <color name="color_FF9B9EB">#FF9B9EBB</color>
+    <color name="color_FFA3A6C0">#FFA3A6C0</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="textPrimary">@color/color_FF291F59</color>
+    <color name="textSecondary">@color/color_FF9B9EB</color>
+    <color name="textThird">@color/color_FFA3A6C0</color>
+    <color name="color_FFECEDF4">#FFECEDF4</color>
+    <color name="color_FFF5F6FA">#FFF5F6FA</color>
+    <color name="color_FF641DAF">#FF641DAF</color>
+    <color name="color_80FFFFFF">#80FFFFFF</color>
+    <color name="color_FFE8353C">#FFE8353C</color>
+    <color name="color_FF000000">#FF000000</color>
+    <color name="color_FFF68B09">#FFF68B09</color>
+    <color name="color_FFF79B2C">#FFF79B2C</color>
+    <color name="color_FF007AFF">#FF007AFF</color>
+
+
+    <color name="color_FF41BDA7">#FF41BDA7</color>
+    <color name="color_increase">@color/color_FF41BDA7</color>
+    <color name="color_deposit">@color/color_FF41BDA7</color>
+    <color name="color_FFDF677E">#FFDF677E</color>
+    <color name="color_decrease">@color/color_FFDF677E</color>
+    <color name="color_FF641FB0">#ff641fb0</color>
+    <color name="color_receipt">@color/color_FF641FB0</color>
+    <color name="color_FF316FF6">#ff316ff6</color>
+    <color name="color_transfer">@color/color_FF316FF6</color>
+    <color name="color_FFF89824">#fff89824</color>
+    <color name="color_withdraw">@color/color_FFF89824</color>
+    <color name="color_FFA585CE">#FFA585CE</color>
+
+    <color name="c_yellow">#FFF7D23E</color>
+</resources>

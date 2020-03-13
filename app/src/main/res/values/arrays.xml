@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="percent_array">
+        <item>0%</item>
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+    <!--展示的默认-->
+    <string-array name="trade_deful">
+        <item>@string/defult</item>
+        <item>@string/show_sell</item>
+        <item>@string/show_buy</item>
+    </string-array>
+    <string-array name="kline_ma_type">
+        <item>@string/sma</item>
+        <item>@string/ema</item>
+        <item>@string/boll</item>
+        <item>@string/vol</item>
+        <item>@string/macd</item>
+        <item>@string/kdj</item>
+        <item>@string/rsi</item>
+    </string-array>
+    <string-array name="asset_menu">
+        <item>@string/change_account_name</item>
+        <item>@string/reset_password</item>
+        <item>@string/export_private_key</item>
+    </string-array>
+</resources>

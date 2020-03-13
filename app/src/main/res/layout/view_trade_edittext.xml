@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_trade_edit"
+    android:layout_height="40dp">
+    <ImageView
+        android:id="@+id/tv_sub"
+        style="@style/WrapMatch"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:src="@mipmap/ic_sub"
+    />
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/bg_trade_edit"
+        android:digits="@string/digits"
+        android:gravity="center"
+        android:inputType="phone"
+        android:maxLength="20"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:textColor="#FF291F59"
+        android:textColorHint="#FF9B9EBB"
+        android:textSize="13sp"
+    />
+    <ImageView
+        android:id="@+id/tv_add"
+        style="@style/WrapMatch"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:src="@mipmap/ic_add"
+    />
+</LinearLayout>

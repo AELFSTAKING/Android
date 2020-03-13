@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="io.alf.exchange">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"
+                     tools:ignore="ProtectedPermissions"/>
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/appname"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="375"/>
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="667"/>
+        <activity android:name=".ui.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.AssetDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.CreateAccountActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.ImportAccountActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.ResetPasswordActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.ModifyAccountActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.ExportAccountActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.ReceiveAddressActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.DepositBindActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.WithdrawActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.WithdrawDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.ReceiveDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.TransferDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.quotation.SearchQuotationActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.quotation.DetailQuotationPortraitActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.DepositBindResultActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.DepositAddressActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.ManageDepositAddressActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.asset.TransferActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.OrderDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.TxRecordDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.DelegateActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.SplashActivity" android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.RewardActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.RewardRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.RewardRuleActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.quotation.DetailQuotationLandActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.ScannerActivity"/>
+    </application>
+</manifest>

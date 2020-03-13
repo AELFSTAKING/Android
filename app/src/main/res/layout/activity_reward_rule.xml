@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/color_white">
+    <include
+        layout="@layout/toolbar_activity_layout"
+    />
+    <ScrollView
+        style="@style/MatchWrap"
+        android:scrollbars="none"
+    >
+        <LinearLayout
+            style="@style/MatchWrap.Vertical"
+            android:background="#FFF5F6FA"
+        >
+            <ImageView
+                style="@style/MatchWrap"
+                android:background="@mipmap/rule"
+            />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

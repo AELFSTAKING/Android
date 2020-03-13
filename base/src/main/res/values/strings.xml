@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">base</string>
+    <string name="ganggang">-- / --</string>
+    <string name="b_net_url_error">The url is invalid.</string>
+    <string name="b_net_server_error">Server exception, please try again later.</string>
+    <string name="b_net_api_error">Api exception, please try again later.</string>
+    <string name="b_net_unknown_error">Unknown exception(code = %d), please try again later.
+    </string>
+    <string name="b_net_socket_time_out">Time out, please try again later.</string>
+    <string name="b_net_socket_exception">Could not connect to network, please check it.</string>
+    <string name="b_net_error_parse">Could not get data now, please retry later.</string>
+</resources>

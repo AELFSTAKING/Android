@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+>
+    <LinearLayout
+        android:id="@+id/ll_1"
+        style="@style/MatchWrap.Horizontal"
+        android:layout_marginTop="15dp"
+    >
+        <TextView
+            android:id="@+id/tv_note_name"
+            style="@style/WrapWrap.TextPrimary.13sp"
+            tools:text="张三"
+        />
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/WrapWrap.TextSecondary.13sp"
+            android:layout_marginLeft="10dp"
+            tools:text="2019.4.15"
+        />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/WrapWrap.TextSecondary.13sp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        tools:text="1W21fssq2wtf4vgsghagq5"
+    />
+    <ImageView
+        android:id="@+id/iv_delete"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@mipmap/ic_delet"
+    />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_address"
+        style="@style/HorizontalLine.ColorFFECEDF4"
+    />
+</RelativeLayout>

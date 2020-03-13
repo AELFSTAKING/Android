@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="sma">SMA</string>
+    <string name="ema">EMA</string>
+    <string name="boll">BOLL</string>
+    <string name="vol">VOL</string>
+    <string name="macd">MACD</string>
+    <string name="kdj">KDJ</string>
+    <string name="rsi">RSI</string>
+</resources>

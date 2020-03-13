@@ -1,0 +1,87 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.objectbox'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: '../dependencies.gradle'
+
+ext.buildTimestamp = null
+ext.formatedBuildTime = { format ->
+    if (buildTimestamp == null) {
+        buildTimestamp = new Date().time
+    }
+    return new SimpleDateFormat(format, Locale.CHINA).format(buildTimestamp)
+}
+
+def innerVersionCode() {
+    return Integer.parseInt(formatedBuildTime("yyMMddHH"))
+}
+
+android {
+    compileSdkVersion defaultConfigs.compileSdkVersion
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "io.aelf.exchange"
+        minSdkVersion defaultConfigs.minSdkVersion
+        targetSdkVersion defaultConfigs.targetSdkVersion
+        versionCode innerVersionCode()
+        versionName "1.0.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                outputFileName = "StakingPlanet_${versionName}_${buildType.name}_${releaseAPKTime()}.apk"
+            }
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            applicationIdSuffix ".debug"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "appname", "开发版 Staking Planet"
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/io.netty.versions.properties'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation supportDeps.appcompat
+    testImplementation testDeps.junit
+    androidTestImplementation testDeps.runner
+    androidTestImplementation testDeps.espressoCore
+
+    implementation thirdDeps.guava
+    implementation thirdDeps.butterknife
+    implementation thirdDeps.web3j
+    kapt thirdDeps.butterknifeCompiler
+    implementation thirdDeps.rxpermissions
+    implementation thirdDeps.MZBannerView
+    implementation thirdDeps.objectBox
+    kapt thirdDeps.objectBoxApt
+    implementation thirdDeps.glide
+    annotationProcessor thirdDeps.glideCompiler
+    // 修复红米创建账号crash的问题
+    implementation thirdDeps.guava
+    //implementation thirdDeps.kofo
+
+    implementation project(path: ':base')
+    compile project(path: ':lib_wallet')
+    compile project(path: ':lib_mqtt')
+    compile project(path: ':lib_custom_kline')
+    compile project(path: ':lib_update-app')
+    compile project(path: ':lib_zxing')
+    compile project(path: ':lib_ucrop')
+}

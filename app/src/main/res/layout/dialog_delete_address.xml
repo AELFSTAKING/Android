@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_delete_address">
+    <TextView
+        android:id="@+id/tv_message"
+        style="@style/WrapWrap.TextPrimary.16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="确定要删除该地址吗？"/>
+    <View
+        android:id="@+id/v_line"
+        style="@style/HorizontalLine"
+        android:layout_below="@+id/tv_message"
+        android:layout_marginTop="30dp"
+        android:background="#c74d4d4d"
+    />
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal.Center"
+        android:layout_height="44dp"
+        android:layout_below="@+id/v_line"
+    >
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/WrapWrap.TextPrimary.16sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"/>
+
+        <View
+            style="@style/VerticalLine"
+            android:background="#c74d4d4d"
+        />
+        <TextView
+            android:id="@+id/tv_confirm"
+            style="@style/WrapWrap.TextPrimary.16sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认"/>
+
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#BA374A</color>
+    <color name="bottomBackgroundSecondary">#F7F9FC</color>
+    <color name="backgroundNavigationBar">#272731</color>
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#A7ACB9</color>
+    <color name="textThird">#8C8CA1</color>
+    <color name="textHint">#72757F</color>
+    <color name="textError">#ff542a</color>
+    <color name="linePrimary">#40403E</color>
+    <color name="lineSecondary">#43434E</color>
+    <color name="dividerDialog">#EFEFEF</color>
+    <color name="messageNotice">#E94242</color>
+    <color name="color_19">#43434E</color>
+    <color name="klineMinLine">#4783AB</color>
+    <color name="klineDepthBackground">#12151C</color>
+    <color name="klineMa5">#FFFFFF</color>
+    <color name="klineMa10">#fdc001</color>
+    <color name="klineMa20">#c30464</color>
+</resources>

@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+apply from: '../dependencies.gradle'
+
+android {
+    compileSdkVersion defaultConfigs.compileSdkVersion
+    defaultConfig {
+        minSdkVersion defaultConfigs.minSdkVersion
+        targetSdkVersion defaultConfigs.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation supportDeps.appcompat
+    androidTestImplementation testDeps.runner
+    androidTestImplementation testDeps.espressoCore
+    testImplementation testDeps.junit
+
+    api thirdDeps.pahoMqttv3
+    api thirdDeps.pahoService
+    implementation project(path: ':base')
+    implementation thirdDeps.fastjson
+    implementation thirdDeps.jacksonDatabind
+    implementation thirdDeps.jacksonCore
+}

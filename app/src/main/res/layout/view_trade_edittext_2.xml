@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_trade_edit"
+        android:layout_height="40dp">
+    <TextView
+            android:id="@+id/tv_title"
+            style="@style/WrapWrap.TextSecondary.13sp"
+            android:padding="9dp"
+            android:gravity="center"
+            tools:text="@string/nubmer"
+    />
+    <EditText
+            android:id="@+id/et_input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:digits="@string/digits"
+            android:inputType="phone"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="#FF291F59"
+            android:textColorHint="#FF9B9EBB"
+            android:textSize="14sp"
+            android:maxLength="20"
+            android:background="@null"
+            android:text="0.00"
+    />
+    <TextView
+            android:id="@+id/tv_currency"
+            style="@style/WrapWrap.TextSecondary.13sp"
+            android:padding="9dp"
+            android:gravity="center"
+            tools:text="ETH"
+    />
+</LinearLayout>

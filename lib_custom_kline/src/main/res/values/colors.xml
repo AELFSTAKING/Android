@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="increasing_color">#55BC95</color>
+    <color name="decreasing_color">#DF6767</color>
+
+    <!--图表-->
+
+    <color name="tran">#00000000</color>
+    <color name="marker_color">#fff</color>
+    <color name="marker_text_color">#333333</color>
+    <color name="chart_grid_color">#333333</color>
+
+<!-- 防止出错-->
+
+    <color name="ma5">@color/klineMa5</color>
+    <color name="ma10">@color/klineMa10</color>
+    <color name="ma20">@color/klineMa20</color>
+
+    <color name="ema7">@color/ma5</color>
+    <color name="ema30">@color/ma10</color>
+
+    <color name="boll_up">@color/ma10</color>
+    <color name="boll_mb">@color/ma5</color>
+    <color name="boll_dn">@color/ma20</color>
+
+    <color name="dif">@color/ma5</color>
+    <color name="dea">@color/ma10</color>
+
+    <color name="k">@color/ma5</color>
+    <color name="d">@color/ma10</color>
+    <color name="j">@color/ma20</color>
+
+    <color name="rsi6">@color/ma5</color>
+    <color name="rsi12">@color/ma10</color>
+    <color name="rsi24">@color/ma20</color>
+
+
+    <color name="normal_line_color">#fff</color>
+
+    <color name="chart_info_color">#88000000</color>
+    <color name="limit_color">#adadad</color>
+    <color name="white">#fff</color>
+
+    <color name="k_dark_gray_bg">#2C2C34</color>
+
+    <color name="klineAxis">#A7ACB9</color>
+
+</resources>

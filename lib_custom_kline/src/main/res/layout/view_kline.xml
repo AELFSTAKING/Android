@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+
+    <!-- -->
+    <com.guoziwei.klinelib.chart.AppCombinedChart
+            android:id="@+id/vol_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_chart_height"
+            android:layout_gravity="bottom"/>
+
+    <!---->
+    <com.guoziwei.klinelib.chart.AppCombinedChart
+            android:id="@+id/price_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+            android:id="@+id/ll_ma"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/bottom_chart_height"
+            android:background="#12151d"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/tv_index"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:textColor="@color/ma5"
+                android:textSize="@dimen/sp_10"/>
+
+        <TextView
+                android:id="@+id/tv_index01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:textColor="@color/ma5"
+                android:textSize="@dimen/sp_10"/>
+
+        <TextView
+                android:id="@+id/tv_index02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/ma10"
+                android:textSize="@dimen/sp_10"/>
+
+        <TextView
+                android:id="@+id/tv_index03"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/ma20"
+                android:textSize="@dimen/sp_10"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

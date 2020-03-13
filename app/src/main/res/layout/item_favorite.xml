@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/ll_1"
+        style="@style/MatchWrap.Vertical"
+        android:layout_width="134dp"
+        android:layout_centerVertical="true"
+    >
+        <TextView
+            android:id="@+id/tv_symbol"
+            style="@style/WrapWrap.TextSecondary.10sp"
+            tools:text="IDA/USDT"/>
+        <TextView
+            android:id="@+id/tv_quantity"
+            style="@style/WrapWrap.TextSecondary.10sp"
+            android:layout_marginTop="6dp"
+            tools:text="24H量 --"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal.Center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ll_1"
+    >
+        <LinearLayout
+            style="@style/MatchWrap.Vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+        >
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/WrapWrap.TextPrimary.16sp"
+                tools:text="---"/>
+            <TextView
+                android:id="@+id/tv_legal_price"
+                style="@style/WrapWrap.TextSecondary.10sp"
+                android:layout_marginTop="6dp"
+                tools:text="24H量 --"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_favorite"
+            style="@style/WrapWrap"
+            android:src="@mipmap/ic_favorite_normal"
+        />
+        <TextView
+            android:id="@+id/tv_wave_percent"
+            style="@style/WrapWrap.ColorWhite.16sp"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_quotation_decrease"
+            android:gravity="center"
+            tools:text="---"/>
+    </LinearLayout>
+    <View
+        style="@style/HorizontalLine.ColorFFECEDF4"
+        android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

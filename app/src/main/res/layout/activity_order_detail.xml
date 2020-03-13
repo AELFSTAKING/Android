@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/color_white">
+    <include
+        layout="@layout/toolbar_activity_layout"
+    />
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none"
+    >
+        <LinearLayout
+            style="@style/MatchWrap.Vertical"
+        >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/MatchWrap"
+                android:paddingLeft="18dp"
+                android:paddingTop="25dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="20dp"
+            >
+                <TextView
+                    android:id="@+id/tv_buy_sell"
+                    style="@style/WrapWrap.TextSecondary.10sp"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:background="@drawable/bg_tx_type_deposit"
+                    tools:text="@string/buy"
+                />
+                <TextView
+                    android:id="@+id/tv_symbol_title"
+                    style="@style/WrapWrap.TextPrimary.12sp"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_buy_sell"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_buy_sell"
+                    app:layout_constraintTop_toTopOf="@+id/tv_buy_sell"
+                    tools:text="AST/BTC"
+                />
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/WrapWrap.TextSecondary.12sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_buy_sell"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_symbol_title"
+                    app:layout_constraintTop_toTopOf="@+id/tv_buy_sell"
+                    tools:text="16:52 04/22"
+                />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/WrapWrap.ColorFF641DAF.12sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_buy_sell"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_buy_sell"
+                    tools:text="完全成交(100%)"
+                />
+
+                <View
+                    style="@style/HorizontalLine.ColorFFECEDF4"
+                    android:layout_marginTop="17dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_buy_sell"
+                />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/WrapWrap.TextSecondary.12sp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/type"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_buy_sell"/>
+
+                <TextView
+                    android:id="@+id/tv_price_status"
+                    style="@style/WrapWrap.TextPrimary.12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_type"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_type"
+                    tools:text="@string/limit_price"
+                />
+
+                <TextView
+                    android:id="@+id/tv_number_title"
+                    style="@style/WrapWrap.TextSecondary.12sp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/volume_and_quantity"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_type"/>
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    style="@style/WrapWrap.TextSecondary.15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_number_title"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_number_title"
+                    tools:text="0.012/0.012"/>
+
+                <TextView
+                    android:id="@+id/tv_order"
+                    style="@style/WrapWrap.TextSecondary.12sp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/average_price_and_price"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_number_title"/>
+
+                <TextView
+                    android:id="@+id/tv_order_price"
+                    style="@style/WrapWrap.TextSecondary.15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_order"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_order"
+                    tools:text="0.117928/0.117928"/>
+
+                <TextView
+                    android:id="@+id/tv_fee_title"
+                    style="@style/WrapWrap.TextSecondary.12sp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/fee"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_order"/>
+
+                <TextView
+                    android:id="@+id/tv_fee"
+                    style="@style/WrapWrap.TextPrimary.15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_fee_title"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_fee_title"
+                    tools:text="0.001 EOS"/>
+
+                <TextView
+                    android:id="@+id/tv_deal_amount_title"
+                    style="@style/WrapWrap.TextSecondary.12sp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/transaction_amount_1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_fee_title"/>
+
+                <TextView
+                    android:id="@+id/tv_deal_amount"
+                    style="@style/WrapWrap.TextPrimary.15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_deal_amount_title"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_deal_amount_title"
+                    tools:text="0.000799 BTC"/>
+
+                <TextView
+                    android:id="@+id/tv_txid_title"
+                    style="@style/WrapWrap.TextSecondary.12sp"
+                    android:layout_marginTop="20dp"
+                    android:text="挂单TxID"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_deal_amount_title"/>
+
+                <TextView
+                    android:id="@+id/tv_txid"
+                    style="@style/WrapWrap.TextPrimary.12sp"
+                    android:layout_width="280dp"
+                    android:ellipsize="middle"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_txid_title"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_txid_title"
+                    tools:text="123456789012345678912345678901234567891234567890123456789"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                style="@style/MatchWrap"
+                android:layout_height="10dp"
+                android:background="@color/color_FFF5F6FA"
+            />
+            <TextView
+                style="@style/WrapWrap.TextPrimary.15sp"
+                android:paddingLeft="18dp"
+                android:paddingTop="12dp"
+                android:paddingRight="18dp"
+                android:text="交易明细"
+            />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                style="@style/MatchMatch"
+            />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

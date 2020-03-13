@@ -1,0 +1,82 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: '../dependencies.gradle'
+
+android {
+    compileSdkVersion defaultConfigs.compileSdkVersion
+    buildToolsVersion "29.0.0"
+
+
+    defaultConfig {
+        minSdkVersion defaultConfigs.minSdkVersion
+        targetSdkVersion defaultConfigs.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            buildConfigField "String", "kofoUrl", "\"\""
+            buildConfigField "String", "baseUrl", "\"\""
+            buildConfigField "String", "mqttUrl", "\"\""
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation supportDeps.appcompat
+    //testImplementation 'junit:junit:4.12'
+    testImplementation testDeps.junit
+    //androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation testDeps.runner
+    //androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation testDeps.espressoCore
+
+    implementation thirdDeps.butterknife
+    annotationProcessor thirdDeps.butterknifeCompiler
+
+    api thirdDeps.utilcode
+    api thirdDeps.immersionbar
+    api thirdDeps.immersionbarFragment
+    api thirdDeps.eventBus
+    api supportDeps.multidex
+    api supportDeps.recyclerview
+    api supportDeps.design
+    api supportDeps.constraintlayout
+    api thirdDeps.gson
+    api thirdDeps.okgo
+    api thirdDeps.okserver
+    api thirdDeps.fresco
+    api thirdDeps.rxjava2
+    api thirdDeps.rxbinding
+    api thirdDeps.flycoTabLayout
+    api thirdDeps.recyclerViewHelper
+    api thirdDeps.autosize
+    api thirdDeps.indicatorseekbar
+    api thirdDeps.flycoDialog
+    api thirdDeps.crashreport
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api 'com.google.zxing:core:3.3.2'
+    implementation thirdDeps.crashreport
+    implementation thirdDeps.jacksonDatabind
+    implementation thirdDeps.jacksonCore
+    implementation thirdDeps.SpinKit
+    //implementation 'com.liulishuo.filedownloader:library:1.7.6'
+
+
+    implementation project(path: ':lib_update-app')
+}

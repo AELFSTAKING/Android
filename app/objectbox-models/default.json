@@ -1,0 +1,138 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5478621145152839699",
+      "lastPropertyId": "2:4390791180312969307",
+      "name": "FavoriteDBSymbol",
+      "properties": [
+        {
+          "id": "1:1110022835478734087",
+          "name": "id"
+        },
+        {
+          "id": "2:4390791180312969307",
+          "name": "symbol"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5756807679918473491",
+      "lastPropertyId": "11:5324195660845798219",
+      "name": "HistoryDBEntity",
+      "properties": [
+        {
+          "id": "1:5006656716501006195",
+          "name": "id"
+        },
+        {
+          "id": "2:2781123341784402304",
+          "name": "symbol"
+        },
+        {
+          "id": "3:3806176157353357689",
+          "name": "price"
+        },
+        {
+          "id": "4:2705294114163406512",
+          "name": "max"
+        },
+        {
+          "id": "5:4767745551058987369",
+          "name": "min"
+        },
+        {
+          "id": "6:4367495923961289511",
+          "name": "quantity"
+        },
+        {
+          "id": "7:2834221449548831768",
+          "name": "applies"
+        },
+        {
+          "id": "8:735211239139778812",
+          "name": "usdPrice"
+        },
+        {
+          "id": "9:5968321472237504865",
+          "name": "wavePrice"
+        },
+        {
+          "id": "10:7835379519119638381",
+          "name": "wavePercent"
+        },
+        {
+          "id": "11:5324195660845798219",
+          "name": "direction"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:5536065256243054562",
+      "lastPropertyId": "11:2869681073681149717",
+      "name": "DBSearchEntity",
+      "properties": [
+        {
+          "id": "1:5816676080926228249",
+          "name": "id"
+        },
+        {
+          "id": "2:4239537293272767131",
+          "name": "symbol"
+        },
+        {
+          "id": "3:6967890300015403984",
+          "name": "price"
+        },
+        {
+          "id": "4:3994478439317384657",
+          "name": "max"
+        },
+        {
+          "id": "5:8997203700908091374",
+          "name": "min"
+        },
+        {
+          "id": "6:6563763164938370332",
+          "name": "quantity"
+        },
+        {
+          "id": "7:2797466483904449074",
+          "name": "applies"
+        },
+        {
+          "id": "8:1761119383049030086",
+          "name": "usdPrice"
+        },
+        {
+          "id": "9:5805267871936416898",
+          "name": "wavePrice"
+        },
+        {
+          "id": "10:6165715070463219704",
+          "name": "wavePercent"
+        },
+        {
+          "id": "11:2869681073681149717",
+          "name": "direction"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:5536065256243054562",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
