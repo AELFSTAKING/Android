@@ -25,7 +25,7 @@ buildConfigField "String", "mqttUrl", "\"\""
 
 1.导入项目代码到Android Studio（File -> Open -> 选择本地代码路径）
 
-2.使用Android Studio 进行编译（Build -> Build Bundle(s)/Apk(s) -> Build App(s)）
+2.使用Android Studio 进行编译（Build -> Build Bundle(s)/Apk(s) -> Build Apk(s)）
 
 3.将生成app安装文件Apk文件（./app/build/outputs/apk/debug/StakingPlanet_1.0.2_debug_yyyymmddhhmm.apk）
 
