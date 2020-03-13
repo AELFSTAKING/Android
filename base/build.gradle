@@ -23,8 +23,11 @@ android {
         debug {
             minifyEnabled false
             debuggable true
-            buildConfigField "String", "kofoUrl", "\"\""
+            // Gateway Url
+            buildConfigField "String", "gwUrl", "\"\""
+            // Business Url
             buildConfigField "String", "baseUrl", "\"\""
+            // Mqtt Url
             buildConfigField "String", "mqttUrl", "\"\""
         }
     }
